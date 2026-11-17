@@ -23,7 +23,7 @@ const el = <K extends keyof HTMLElementTagNameMap>(tag: K, props: Record<string,
 
 const w = window as unknown as { STOATWORKS_ABOUT?: Record<string, unknown> };
 w.STOATWORKS_ABOUT = { ...w.STOATWORKS_ABOUT, version: __APP_VERSION__ };
-$("version").textContent = `v${__APP_VERSION__}`;
+$("version").textContent = __APP_VERSION__;
 
 // ---------------------------------------------------------------- state
 
