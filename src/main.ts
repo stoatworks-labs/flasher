@@ -1,3 +1,5 @@
+// The shared Stoatworks theme first, so the flasher's own CSS layers over it.
+import "./stoatworks-theme.css";
 import "./style.css";
 import { SERIAL_VIDS, chipByImageId, type Chip } from "./chips.ts";
 import { looseWrites, openPackageZip, placeFiles, sha256hex, variantWrites, type LooseFile, type OpenedPackage } from "./files.ts";

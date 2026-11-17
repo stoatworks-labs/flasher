@@ -60,12 +60,17 @@
     <li><a href="https://github.com/stoatworks-labs/flasher">Source on GitHub</a></li>
   </ul>
 </noscript>
-<main>
-  <header>
-    <h1>Stoatworks Flasher <span class="tag">beta</span></h1>
+<header class="sw-bar top">
+  <div class="top-inner">
+    <div class="brand-row">
+      <h1 class="sw-brand"><span class="sw-mark" aria-hidden="true">↯</span> Stoatworks Flasher <span class="tag">beta</span></h1>
+      <button type="button" data-stoatworks-about>About</button>
+    </div>
     <p class="sub">Put firmware on our hardware, or any ESP32 image on any ESP32 board, over USB, straight
       from this tab. The images are checked here and written by your browser. Nothing is uploaded anywhere.</p>
-  </header>
+  </div>
+</header>
+<main>
 
   <div id="no-serial" class="banner err" hidden>
     <strong>This browser cannot reach a USB serial port.</strong>
@@ -196,8 +201,7 @@
   </details>
 
   <footer>
-    <button type="button" class="linkish" data-stoatworks-about>About</button>
-    · <a href="https://stoatworks-labs.com/hardware/">Our hardware</a>
+    <a href="https://stoatworks-labs.com/hardware/">Our hardware</a>
     · <a href="https://stoatworks-labs.com/web-tools/flasher/" target="_blank" rel="noopener">More about the flasher</a>
     · <span id="version"></span>
   </footer>
